@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="noindex, nofollow" />
+
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<main>
+			<div class="h1">Termin buchen</div>
+
+			<form>
+				<div class="fieldset">
+					<div class="legend">Persönliche Daten</div>
+					<div>
+						<div class="label">Name</div>
+						<input type="text" required />
+					</div>
+
+					<div>
+						<div class="label">Geburtsdatum</div>
+						<input type="date" required />
+					</div>
+
+					<div>
+						<div class="label">E-Mail-Adresse</div>
+						<input type="email" required />
+					</div>
+
+					<div>
+						<div class="label">Telefonnummer</div>
+						<input type="tel" required />
+					</div>
+				</div>
+
+				<div class="fieldset">
+					<div class="legend">Termin</div>
+					<div>
+						<div class="label">Datum</div>
+						<input type="date" required />
+					</div>
+					<div>
+						<div class="label">Uhrzeit</div>
+						<input type="time" required />
+					</div>
+				</div>
+
+				<div>
+					<div class="label">Optionale Hinweise</div>
+					<textarea rows="6"></textarea>
+				</div>
+
+				<div class="button" onclick="this.closest('form').requestSubmit()">
+					Termin buchen
+				</div>
+			</form>
+		</main>
+	</body>
+</html>

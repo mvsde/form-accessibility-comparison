@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="noindex, nofollow" />
+
+		<title>Termin buchen</title>
+
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<main>
+			<h1 id="title">Termin buchen</h1>
+
+			<form aria-labelledby="title">
+				<fieldset>
+					<legend>Persönliche Daten</legend>
+					<div>
+						<label for="name">Name</label>
+						<input id="name" type="text" required />
+					</div>
+
+					<div>
+						<label for="birthdate">Geburtsdatum</label>
+						<input id="birthdate" type="date" required />
+					</div>
+
+					<div>
+						<label for="email">E-Mail-Adresse</label>
+						<input id="email" type="email" required />
+					</div>
+
+					<div>
+						<label for="phone">Telefonnummer</label>
+						<input id="phone" type="tel" required />
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Termin</legend>
+					<div>
+						<label for="appointment-date">Datum</label>
+						<input id="appointment-date" type="date" required />
+					</div>
+					<div>
+						<label for="appointment-time">Uhrzeit</label>
+						<input id="appointment-time" type="time" required />
+					</div>
+				</fieldset>
+
+				<div>
+					<label for="note">Optionale Hinweise</label>
+					<textarea id="note" rows="6"></textarea>
+				</div>
+
+				<button type="submit">Termin buchen</button>
+			</form>
+		</main>
+	</body>
+</html>
