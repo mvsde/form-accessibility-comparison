@@ -11,7 +11,12 @@ body {
 	padding: 1rem;
 }
 
-main {
+.inaccessible :focus {
+	outline: none;
+}
+
+main,
+.main {
 	inline-size: 45rem;
 	margin-inline: auto;
 	max-inline-size: 100%;
